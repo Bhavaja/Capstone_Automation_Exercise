@@ -43,7 +43,7 @@ ChromeOptions options
     	downloadInvoicePage.clickDownloadInvoice();
     	Thread.sleep(3000);
     	String downloadPath = "C:\\ProgramData\\Jenkins\\Downloads";
-File downloadedFile = new File(downloadPath + "\\invoice.pdf");
+File downloadedFile = new File(downloadPath + "\\invoice.txt");
 
 assertTrue(downloadedFile.exists(), "Invoice file was not downloaded!");
     	
