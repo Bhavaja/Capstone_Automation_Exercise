@@ -27,15 +27,15 @@ public class PaymentPageTest {
     @Test
     public void paymentTest() throws InterruptedException {
     	paymentPage.openUrl(ConfigReader.getProperty("loginUrl")); 
-    	paymentPage.enterValidEmail("dexter@gmail.com");
-    	paymentPage.enterValidPassword("Dexter@123");
+    	paymentPage.enterValidEmail("lucifer@gmail.com");
+    	paymentPage.enterValidPassword("DaisyMom@123");
     	paymentPage.clickLogin();
     	paymentPage.clickCart();
     	Thread.sleep(2000);
     	paymentPage.clickCheckout();
     	paymentPage.scrollDown();
     	paymentPage.clickplaceOrder();
-    	paymentPage.enterNameOnCard("Dexter");
+    	paymentPage.enterNameOnCard("Lucifer");
     	paymentPage.enterCardNumber("123456789");
     	paymentPage.enterCvc("311");
     	paymentPage.enterExpiryMonth("10");
