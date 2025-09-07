@@ -73,7 +73,7 @@ public class SignupLoginPage {
     }
     
     public void enternewPassword(String pass) {
-    	//wait.until(ExpectedConditions.elementToBeClickable(newPassword));
+    	wait.until(ExpectedConditions.elementToBeClickable(newPassword));
     	driver.findElement(newPassword).sendKeys(pass);
     }
     
