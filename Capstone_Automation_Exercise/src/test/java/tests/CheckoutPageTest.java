@@ -28,8 +28,8 @@ public class CheckoutPageTest {
     @Test(priority = 1)
     public void checkoutWithLogin() throws InterruptedException {
     	checkoutPage.openUrl(ConfigReader.getProperty("loginUrl")); 
-    	checkoutPage.enterValidEmail("dexter@gmail.com");
-    	checkoutPage.enterValidPassword("Dexter@123");
+    	checkoutPage.enterValidEmail("lucifer@gmail.com");
+    	checkoutPage.enterValidPassword("DaisyMom@123");
     	checkoutPage.clickLogin();
     	checkoutPage.clickCart();
     	Thread.sleep(2000);
