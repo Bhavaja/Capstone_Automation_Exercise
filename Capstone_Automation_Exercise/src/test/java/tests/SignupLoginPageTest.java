@@ -38,6 +38,7 @@ public class SignupLoginPageTest {
     	signupLoginPage.enterNewName("Ra");
     	signupLoginPage.enterNewEmail("ra@gmail.com");
     	signupLoginPage.clickSignup();
+		Thread.sleep(2000);
     	/*Assert.assertTrue(driver.getTitle().toLowerCase().contains("signup"),
                 "User is not navigated to signup page'");*/
     	signupLoginPage.enternewPassword("ra@123");
@@ -61,6 +62,7 @@ public class SignupLoginPageTest {
     //signup with existing user
     @Test(priority = 2)
     public void signupExistingUser() throws InterruptedException {
+		Thread.sleep(2000);
     	signupLoginPage.clickLogout();
     	signupLoginPage.clickSignupLogin();
     	signupLoginPage.enterNewName("Diana");
