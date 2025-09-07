@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.ExtentTestListener"/>
+  </listeners>
+  <test thread-count="5" name="All Tests(failed)">
+    <classes>
+      <class name="tests.PaymentPageTest">
+        <methods>
+          <include name="paymentTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.PaymentPageTest -->
+      <class name="tests.SignupLoginPageTest">
+        <methods>
+          <include name="navigateBackToHome"/>
+          <include name="setUp"/>
+          <include name="signupExistingUser"/>
+          <include name="tearDown"/>
+          <include name="signupNewUser"/>
+        </methods>
+      </class> <!-- tests.SignupLoginPageTest -->
+    </classes>
+  </test> <!-- All Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

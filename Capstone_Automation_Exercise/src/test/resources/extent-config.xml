@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <!-- Document details -->
+    <configuration>
+        <!-- Report name on the top -->
+        <reportName>Automation Exercise Test Report</reportName>
+
+        <!-- Title shown in the browser tab -->
+        <documentTitle>Automation Testing Report</documentTitle>
+
+        <!-- Encoding type -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Theme: standard or dark -->
+        <theme>standard</theme>
+        <!-- <theme>dark</theme> -->
+
+        <!-- Chart visibility -->
+        <protocol>HTTPS</protocol>
+        <timelineEnabled>true</timelineEnabled>
+        <enableCategoryView>true</enableCategoryView>
+        <enableAuthorView>true</enableAuthorView>
+        <enableTestRunnerLogsView>true</enableTestRunnerLogsView>
+        <enableExceptionView>true</enableExceptionView>
+        <enableDashboardView>true</enableDashboardView>
+        <enableTimelineView>true</enableTimelineView>
+        <enableLogView>true</enableLogView>
+
+        <!-- Date-time format in reports -->
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+        <!-- Report CSS customization -->
+        <css>
+            .report-name { 
+                font-size: 20px; 
+                font-weight: bold; 
+                color: #2E86C1; 
+            }
+            .node-name {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        </css>
+
+        <!-- Custom JS (optional, if you want to tweak interactions) -->
+        <js>
+            document.getElementsByClassName("report-name")[0].style.color = "green";
+        </js>
+    </configuration>
+</extentreports>
