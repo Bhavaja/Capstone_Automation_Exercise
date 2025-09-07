@@ -75,7 +75,7 @@ public class SignupLoginPage {
     }
     
     public void enternewPassword(String pass) {
-    	wait.until(ExpectedConditions.elementToBeClickable(newPassword));
+    	//wait.until(ExpectedConditions.elementToBeClickable(newPassword));
     	driver.findElement(newPassword).sendKeys(pass);
     }
     
@@ -180,7 +180,7 @@ public class SignupLoginPage {
     }
     
     public void clickLogout() {
-    	wait.until(ExpectedConditions.elementToBeClickable(logoutLink));
+    	//wait.until(ExpectedConditions.elementToBeClickable(logoutLink));
     	driver.findElement(logoutLink).click();
     }
     
