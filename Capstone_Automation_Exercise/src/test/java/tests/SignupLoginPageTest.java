@@ -35,15 +35,15 @@ public class SignupLoginPageTest {
     @Test(priority = 1)
     public void signupNewUser() throws InterruptedException {
     	//signupLoginPage.clickSignupLogin();
-    	signupLoginPage.enterNewName("Ra");
-    	signupLoginPage.enterNewEmail("ra@gmail.com");
+    	signupLoginPage.enterNewName("Re");
+    	signupLoginPage.enterNewEmail("re@gmail.com");
     	signupLoginPage.clickSignup();
 		Thread.sleep(2000);
     	/*Assert.assertTrue(driver.getTitle().toLowerCase().contains("signup"),
                 "User is not navigated to signup page'");*/
-    	signupLoginPage.enternewPassword("ra@123");
+    	signupLoginPage.enternewPassword("re@123");
     	signupLoginPage.selectDOB("21", "June", "1996");
-    	signupLoginPage.enterFirstName("Ra");
+    	signupLoginPage.enterFirstName("Re");
     	signupLoginPage.enterLastName("Sharma");
     	signupLoginPage.enterAddress("Abc colony");
     	signupLoginPage.selectCountry("India");
