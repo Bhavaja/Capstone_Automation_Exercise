@@ -42,17 +42,17 @@ public class PaymentPage {
     }
 
     public void enterValidEmail(String email) {
-    	//wait.until(ExpectedConditions.elementToBeClickable(loginEmail));
+    	wait.until(ExpectedConditions.elementToBeClickable(loginEmail));
     	driver.findElement(loginEmail).sendKeys(email);
     }
     
     public void enterValidPassword(String pass) {
-    	//wait.until(ExpectedConditions.elementToBeClickable(loginPassword));
+    	wait.until(ExpectedConditions.elementToBeClickable(loginPassword));
     	driver.findElement(loginPassword).sendKeys(pass);
     }
     
     public void clickLogin() {
-    	//wait.until(ExpectedConditions.elementToBeClickable(loginButton));
+    	wait.until(ExpectedConditions.elementToBeClickable(loginButton));
     	driver.findElement(loginButton).click();
     }
     
@@ -71,7 +71,7 @@ public class PaymentPage {
     }
     
     public void clickplaceOrder() {
-    	//wait.until(ExpectedConditions.elementToBeClickable(cartLink));
+    	wait.until(ExpectedConditions.elementToBeClickable(cartLink));
     	driver.findElement(placeOrderButton).click();   
     }
     
