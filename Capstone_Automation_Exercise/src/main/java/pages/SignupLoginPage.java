@@ -178,7 +178,7 @@ public class SignupLoginPage {
     }
     
     public void clickLogout() {
-    	//wait.until(ExpectedConditions.elementToBeClickable(logoutLink));
+    	wait.until(ExpectedConditions.elementToBeClickable(logoutLink));
     	driver.findElement(logoutLink).click();
     }
     
