@@ -42,10 +42,10 @@ ChromeOptions options
     public void downloadInvoiceTest() throws InterruptedException {
     	downloadInvoicePage.clickDownloadInvoice();
     	Thread.sleep(3000);
-    	String downloadPath = System.getProperty("user.home") + "/Downloads/";
-        File downloadedFile = new File(downloadPath + "invoice.txt");  // or invoice.pdf based on site
-        
-        Assert.assertTrue(downloadedFile.exists(), "Invoice file was not downloaded!");
+    	String downloadPath = "C:\\ProgramData\\Jenkins\\Downloads";
+File downloadedFile = new File(downloadPath + "\\invoice.pdf");
+
+assertTrue(downloadedFile.exists(), "Invoice file was not downloaded!");
     	
     }
     
