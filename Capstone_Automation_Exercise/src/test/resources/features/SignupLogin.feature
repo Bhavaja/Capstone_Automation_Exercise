@@ -13,7 +13,7 @@ Feature: Signup and Login functionality
 
     Examples:
       | name | email             | password  | day | month | year | fname | lname | address     | country | state            | city    | zip    | mobile     | expectedMessage  |
-      | Bol | bol123@gmail.com | Bol@123  | 21  | June  | 1996 | Bol | Sharma| Abc colony | India   | Andhra Pradesh   | Tirupati| 517503 | 9876543210 | ACCOUNT CREATED! |
+      | Bo | bo123@gmail.com | Bo@123  | 21  | June  | 1996 | Bo | Sharma| Abc colony | India   | Andhra Pradesh   | Tirupati| 517503 | 9876543210 | ACCOUNT CREATED! |
 
   Scenario Outline: Signup with existing user
     Given I open the application
