@@ -13,17 +13,28 @@ import pages.DownloadInvoicePage;
 import utils.ConfigReader;
 
 public class DownloadInvoicePageTest {
-	
-	public WebDriver driver;
-	DownloadInvoicePage downloadInvoicePage;
 
+	
+ChromeOptions options
     @BeforeClass
     public void setUp() {
     	ConfigReader.loadProperties();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        downloadInvoicePage = new DownloadInvoicePage(driver);
-        downloadInvoicePage.openUrl(ConfigReader.getProperty("downloadInvoiceUrl")); 
+    
+    HashMap<String, Object> chromePrefs = new HashMap<>();
+    chromePrefs.put("download.default_directory", "C:\\ProgramData\\Jenkins\\Downloads");
+    chromePrefs.put("download.prompt_for_download", false);
+    chromePrefs.put("plugins.always_open_pdf_externally", true);
+    chromePrefs.put("download.directory_upgrade", true);
+    chromePrefs.put("safebrowsing.enabled", true);
+
+    options = new ChromeOptions();
+    options.setExperimentalOption("prefs", chromePrefs);
+    options.addArguments("--headless=new", "--disable-gpu", "--window-size=1920,1080");
+
+    driver = new ChromeDriver(options);
+    driver.manage().window().maximize();
+    downloadInvoicePage = new DownloadInvoicePage(driver);
+    downloadInvoicePage.openUrl(ConfigReader.getProperty("downloadInvoiceUrl")); 
     }
    
     //download invoice
