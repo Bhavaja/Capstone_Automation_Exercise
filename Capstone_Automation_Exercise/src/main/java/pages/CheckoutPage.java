@@ -85,7 +85,7 @@ public class CheckoutPage {
     }
     
     public void clickRegisterLogin() {
-    	//wait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
+    	wait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
     	driver.findElement(registerLoginLink).click();
     }
 
