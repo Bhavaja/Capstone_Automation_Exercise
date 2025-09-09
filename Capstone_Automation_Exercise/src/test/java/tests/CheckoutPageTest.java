@@ -47,6 +47,7 @@ public class CheckoutPageTest {
     	checkoutPage.openUrl(ConfigReader.getProperty("productsUrl")); 
     	checkoutPage.clickAddToCart();
     	checkoutPage.clickViewCart();
+		Thread.sleep(2000);
     	checkoutPage.clickCheckout();
     	checkoutPage.clickRegisterLogin();
     	Assert.assertTrue(driver.getTitle().toLowerCase().contains("login"),
