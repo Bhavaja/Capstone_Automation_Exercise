@@ -75,7 +75,7 @@ public class CheckoutPage {
     }
     
     public void clickAddToCart() {
-    	//wait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
+    	wait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
     	driver.findElement(addToCartButton).click();
     }
     
