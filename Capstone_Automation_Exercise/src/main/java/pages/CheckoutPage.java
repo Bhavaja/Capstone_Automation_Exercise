@@ -23,7 +23,7 @@ public class CheckoutPage {
 	
 	By addToCartButton = By.cssSelector("button.btn.btn-default.cart");
 	By viewCartButton = By.cssSelector("div.modal-content a[href='/view_cart']");
-	By proceedToCheckoutButton = By.cssSelector("a.btn.btn-default.check_out");
+	By proceedToCheckoutButton = By.xpath("//a[contains(@class,'check_out')]");
 	
 	By logoutLink = By.xpath("//a[contains(text(),'Logout')]");
 	
