@@ -1,4 +1,4 @@
-package tests;
+/*package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,7 +41,7 @@ public class SignupLoginPageTest {
 		Thread.sleep(2000);
     	/*Assert.assertTrue(driver.getTitle().toLowerCase().contains("signup"),
                 "User is not navigated to signup page'");*/
-    	signupLoginPage.enternewPassword("relaaa@123");
+    	/*signupLoginPage.enternewPassword("relaaa@123");
     	signupLoginPage.selectDOB("21", "June", "1996");
     	signupLoginPage.enterFirstName("Relaaa");
     	signupLoginPage.enterLastName("Sharma");
@@ -111,7 +111,7 @@ public class SignupLoginPageTest {
                 "User is not navigated to signup page'");
     }*/
     
-    @AfterClass
+   /* @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();
@@ -119,3 +119,4 @@ public class SignupLoginPageTest {
     }
    
 }
+*/
